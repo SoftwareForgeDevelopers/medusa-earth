@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "ant-regular";
+  src: url("/public/fonts/Antipasto_regular.otf");
+}
+
+@font-face {
+  font-family: "ant-bold";
+  src: url("/public/fonts/Antipasto_extrabold.otf");
+}
+
+@font-face {
+  font-family: "ant-light";
+  src: url("/public/fonts/Antipasto_extralight.otf");
+}
+
+@layer base {
+  html {
+    font-family: "ant-regular", system-ui, sans-serif;
+  }
+}
