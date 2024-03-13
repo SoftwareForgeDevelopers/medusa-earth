@@ -3,6 +3,7 @@ import ValuesSection from "../components/ValuesSection";
 import Footer from "../components/Footer";
 import IntroSection from "../components/IntroSection";
 import RegulationsSection from "../components/RegulationsSection";
+import AboutMedusaSection from "../components/AboutMedusaSection";
 
 function Homepage() {
   return (
@@ -11,6 +12,7 @@ function Homepage() {
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />
+      <AboutMedusaSection />
       <Footer />
     </div>
   );

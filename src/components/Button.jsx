@@ -18,7 +18,6 @@ function Button({ type, styles ,content }) {
   }
 
   classNames += `text-${textColor} bg-${background} border border-${border} rounded-full ${styles}`;
-  console.log(classNames);
 
   return <button className={classNames}>{content}</button>;
 }

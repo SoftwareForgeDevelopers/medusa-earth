@@ -24,5 +24,6 @@
     padding: 0;
     box-sizing: border-box;
     max-width: none;
+    color: rgba(0, 7, 30, 1);
   }
 }
