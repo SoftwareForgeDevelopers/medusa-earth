@@ -5,7 +5,7 @@ function Header() {
     <header className="w-full flex items-center justify-between">
       <figure className="h-9">
         <img
-          src="/src/assets/logo/medusa-azul-sin-fondo.webp"
+          src="/assets/logo/medusa-azul-sin-fondo.webp"
           alt="logo"
           className="h-full"
         />
