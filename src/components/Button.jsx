@@ -1,4 +1,4 @@
-function Button({ type, styles ,content }) {
+function Button({ type, styles, content, children }) {
   let classNames =
     "flex justify-center items-center px-5 gap-2 h-12 font-w-bold ";
   let background, border, textColor;
@@ -19,7 +19,9 @@ function Button({ type, styles ,content }) {
 
   classNames += `text-${textColor} bg-${background} border border-${border} rounded-full ${styles}`;
 
-  return <button className={classNames}>{content}</button>;
+  return <button className={classNames}>
+    {content} {children}
+    </button>;
 }
 
 export default Button;

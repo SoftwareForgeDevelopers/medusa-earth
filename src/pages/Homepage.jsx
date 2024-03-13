@@ -6,6 +6,7 @@ import RegulationsSection from "../components/RegulationsSection";
 import AboutMedusaSection from "../components/AboutMedusaSection";
 import ServicesSection from "../components/ServicesSection";
 import TeamSection from "../components/TeamSection";
+import BlogSection from "../components/BlogSection";
 
 function Homepage() {
   return (
@@ -17,6 +18,7 @@ function Homepage() {
       <AboutMedusaSection />
       <TeamSection />
       <ServicesSection />
+      <BlogSection />
       <Footer />
     </div>
   );
