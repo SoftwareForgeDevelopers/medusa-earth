@@ -7,6 +7,7 @@ import AboutMedusaSection from "../components/AboutMedusaSection";
 import ServicesSection from "../components/ServicesSection";
 import TeamSection from "../components/TeamSection";
 import BlogSection from "../components/BlogSection";
+import Newsletter from "../components/Newsletter";
 
 function Homepage() {
   return (
@@ -19,6 +20,7 @@ function Homepage() {
       <TeamSection />
       <ServicesSection />
       <BlogSection />
+      <Newsletter />
       <Footer />
     </div>
   );
