@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+function Footer () {
   return (
     <footer className="h-80 items-center bg-center bg-cover bg-[url('/assets/backgrounds/dark-sky.webp')] text-white mt-36">
       <div className="px-16 py-20 container mx-auto flex justify-between items-center">

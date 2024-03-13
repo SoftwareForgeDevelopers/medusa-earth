@@ -5,6 +5,7 @@ import IntroSection from "../components/IntroSection";
 import RegulationsSection from "../components/RegulationsSection";
 import AboutMedusaSection from "../components/AboutMedusaSection";
 import ServicesSection from "../components/ServicesSection";
+import TeamSection from "../components/TeamSection";
 
 function Homepage() {
   return (
@@ -14,6 +15,7 @@ function Homepage() {
       <RegulationsSection />
       <ValuesSection />
       <AboutMedusaSection />
+      <TeamSection />
       <ServicesSection />
       <Footer />
     </div>

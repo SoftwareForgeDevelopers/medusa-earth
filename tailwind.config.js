@@ -36,6 +36,7 @@ export default {
         0.2: "0.2px",
       },
       height: {
+        18: "18px",
         289: "289.33px",
         63: "63.33px",
         66: "66px",
@@ -45,9 +46,12 @@ export default {
         32: "32px",
         20.89: "20.89px",
         22.52: "22.52px",
+        93: "93px",
+        501: "501px",
         890: "890px",
       },
       width: {
+        18: "18px",
         392: "392px",
         63: "63.33px",
         66: "66px",
@@ -95,6 +99,9 @@ export default {
         "var-dark-blue": "rgb(4, 20, 86)",
         "var-green": "rgb(4, 166, 162)",
         "var-grey-blue": "rgba(211, 216, 221, 0.25)",
+      },
+      backgroundImage: {
+        "gradient-border-blue": `linear-gradient(138.35deg, #041456 2.75%, rgba(172,235,239,0.937255) 97.73%)`,
       },
     },
   },
