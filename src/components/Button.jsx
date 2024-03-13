@@ -1,5 +1,6 @@
 function Button({ type, content }) {
-  let classNames = "flex justify-center items-center px-5 gap-2 h-12 ";
+  let classNames =
+    "flex justify-center items-center px-5 gap-2 h-12 font-w-bold ";
   let background, border, textColor;
 
   if (type === "white") {

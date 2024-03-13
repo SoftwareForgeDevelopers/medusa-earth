@@ -11,9 +11,16 @@ export default {
         '28': '28px',
         '48': '48px',
         '128': '128px',
+        52: "52px",
       },
-      padding:{
-        '48': '48px',
+      padding: {
+        48: "48px",
+      },
+      margin: {
+        43.5: "43.5px",
+      },
+      borderWidth: {
+        0.2: "0.2px",
       },
       height: {
         '289': '289.33px',

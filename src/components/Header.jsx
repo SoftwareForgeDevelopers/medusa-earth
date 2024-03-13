@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function Header() {
   return (
-    <header className="w-full flex items-center justify-between">
+    <header className="px-16 py-4 w-full flex items-center justify-between">
       <figure className="h-9">
         <img
           src="/assets/logo/medusa-azul-sin-fondo.webp"
