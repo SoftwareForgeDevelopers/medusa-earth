@@ -1,11 +1,11 @@
 import Header from "../components/Header";
-import AttributteContainer from "../components/AttributtesContainer";
+import ValuesSection from "../components/ValuesSection";
 
 function Homepage() {
   return (
     <div>
       <Header />
-      <AttributteContainer />
+      <ValuesSection />
     </div>
   );
 }
