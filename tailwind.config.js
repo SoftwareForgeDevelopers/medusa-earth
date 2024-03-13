@@ -7,6 +7,7 @@ export default {
         '90': '90px',
       },
       borderRadius: {
+        '34': '34px',
         '52': '52px',
         '25': '25px',
       },
@@ -14,20 +15,24 @@ export default {
         '8': '8px',
         '28': '28px',
         '48': '48px',
+        '80': '80px',
         '128': '128px',
-        52: "52px",
+        '52': "52px",
       },
       padding: {
         '21': "21px",
         '25': "25px",
+        '41': "41px",
+        '42': "42px",
         '48': "48px",
         '83': "83px",
       },
       margin: {
-        43.5: "43.5px",
+        '43.5': "43.5px",
+        '64': '64px',
       },
       borderWidth: {
-        0.2: "0.2px",
+        '0.2': "0.2px",
       },
       height: {
         '289': '289.33px',
@@ -57,8 +62,10 @@ export default {
         '702': '702px'
       },
       fontSize: {
+        '18': '18px',
         '20': '20px',
         '22': '22px',
+        '45': '45px',
         '60': '60px',
         '70': '70px',
       },
@@ -75,6 +82,7 @@ export default {
       colors: {
         "var-black": "rgba(0, 7, 30, 1)",
         "var-sky-blue": "rgb(187, 255, 255)",
+        "var-very-light-grey": "rgba(217, 217, 217, 0.28)",
         "var-light-grey": "rgba(102, 102, 102, 0.5)",
         "var-light-blue": "rgb(0, 188, 255)",
         "var-light-green": "rgb(95, 255, 255)",

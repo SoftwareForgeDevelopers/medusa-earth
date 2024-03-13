@@ -1,4 +1,5 @@
 import Label from "./Label";
+import Service from "./Service";
 
 function ServicesSection() {
   return (
@@ -18,6 +19,7 @@ function ServicesSection() {
           </p>
         </div>
       </div>
+      <Service type="light" />
     </div>
   );
 }
