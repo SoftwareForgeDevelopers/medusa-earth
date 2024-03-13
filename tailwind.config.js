@@ -21,6 +21,7 @@ export default {
         '21': "21px",
         '25': "25px",
         '48': "48px",
+        '83': "83px",
       },
       margin: {
         43.5: "43.5px",
@@ -33,6 +34,7 @@ export default {
         '63': '63.33px',
         '66': '66px',
         '51': '51px',
+        '56': '56px',
         '31': '31.33px',
         '32': '32px',
         '20.89': '20.89px',
@@ -47,10 +49,13 @@ export default {
         '22.52': '22.52px',
         '20.89': '20.89px',
         '123': '123px',
+        '198': '198px',
         '205': '205px',
+        '229': '229px',
         '702': '702px'
       },
       fontSize: {
+        '20': '20px',
         '22': '22px',
         '60': '60px',
         '70': '70px',
@@ -68,6 +73,7 @@ export default {
       colors: {
         "var-black": "rgba(0, 7, 30, 1)",
         "var-sky-blue": "rgb(187, 255, 255)",
+        "var-light-grey": "rgba(102, 102, 102, 0.5)",
         "var-light-blue": "rgb(0, 188, 255)",
         "var-light-green": "rgb(95, 255, 255)",
         "var-dark-green": "rgb(4, 46, 86)",
