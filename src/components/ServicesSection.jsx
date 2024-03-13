@@ -10,7 +10,7 @@ function ServicesSection() {
           Servicios Energéticos:
         </h3>
         <p className="text-60 text-var-dark-blue">
-          Potenciando Tu Impacto Ambienta
+          Potenciando Tu Impacto Ambiental
         </p>
         <div className="w-617 text-center">
           <p className="text-22">
