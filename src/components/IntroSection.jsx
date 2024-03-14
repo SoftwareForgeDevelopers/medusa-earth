@@ -4,7 +4,7 @@ function IntroSection() {
   return (
     <section>
       <img
-        src="/assets/backgrounds/11.png"
+        src="/assets/backgrounds/intro-banner.webp"
         alt="main image"
         className="w-screen"
       />
@@ -27,7 +27,11 @@ function IntroSection() {
         </h1>
         <div className="flex flex-row gap-4">
           <Button type="white" styles="w-123 h-51" content="Únete Hoy" />
-          <Button type="transparent" styles="w-205 h-51" content="Resolvemos tus dudas" />
+          <Button
+            type="transparent"
+            styles="w-205 h-51"
+            content="Resolvemos tus dudas"
+          />
         </div>
       </div>
     </section>

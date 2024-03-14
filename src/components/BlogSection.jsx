@@ -50,7 +50,7 @@ function BlogSection() {
           Ver todos los artículos
           <span>
             <img
-              src="/assets/icons/little-arrow.webp"
+              src="/assets/icons/little-arrow-blue.webp"
               alt="arrow-up"
               className="w-5"
             />
