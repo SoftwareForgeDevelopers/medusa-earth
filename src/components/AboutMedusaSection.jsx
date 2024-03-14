@@ -14,7 +14,7 @@ function AboutMedusaSection() {
         <img
           src="/assets/icons/arrow.png"
           alt="arrow-icon"
-          className="w-20 h-20 absolute bottom-0 right-0 mb-5 mr-5"
+          className="w-100 h-100 absolute bottom-0 right-0 mb-5 mr-5"
         />
       </div>
 
