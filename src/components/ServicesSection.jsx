@@ -19,7 +19,9 @@ function ServicesSection() {
           </p>
         </div>
       </div>
-      <Service type="light" />
+      <Service type="light" imageLayout={1} />
+      <Service type="dark" imageLayout={2} />
+      <Service type="light-blue" imageLayout={3} />
     </div>
   );
 }

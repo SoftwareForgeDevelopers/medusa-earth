@@ -1,26 +1,109 @@
+import Button from "./Button";
 import ServiceListItem from "./ServiceListItem";
 
-function Service({type}) {
+function Service({ type, imageLayout }) {
+  let className =
+    "m-64 px-42 py-41 flex flex-row items-center justify-around gap-80 rounded-34";
+  let titleClassName = "text-45 font-w-bold";
+  let buttonClassName = "font-w-regular h-51 mt-10 text-18";
+  let linkClassName = "text-18 underline font-w-bold";
+  let descriptionClassName = "text-22";
 
-    let className = "m-64 px-42 py-41 flex flex-row items-center justify-between gap-80 rounded-34";
-
-    if (type === "light") {
-        className += " bg-var-very-light-grey";
-    }
-
+  if (type === "light") {
+    className += " bg-var-very-light-grey";
+    titleClassName += " text-var-dark-blue";
+    linkClassName += " text-var-dark-blue";
+  } else if (type === "light-blue") {
+    className += " bg-var-very-light-grey";
+  } else if (type === "dark") {
+    className += " bg-var-dark-blue";
+    linkClassName += " text-white";
+    titleClassName += " text-white";
+    descriptionClassName += " text-white";
+  }
 
   return (
     <div className={className}>
-      <div><img src="/assets/backgrounds/gradient-background.png" alt="" /></div>
-      <div className="flex flex-col items-start justify-center">
-        <p className="text-18 text-var-dark-blue underline font-w-bold">Financiamiento energetico</p>
-        <h3 className="text-45 font-w-bold text-var-dark-blue">Cataliza tu proyecto</h3>
-        <p className="text-22">Recibe orientación experta para maximizar el éxito de tus proyectos de energía renovable.</p>
-        <ul>
-            <ServiceListItem type="light" content="Rápido acceso a fondos" />
-            <li><p>Proceso simple y transparente</p></li>
-            <li><p>Financiamiento adaptado</p></li>
+      <div className="relative">
+        {imageLayout === 1 ? (
+          <>
+            <img
+              src="/assets/backgrounds/gradient-background.png"
+              alt="background"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp-image"
+              className="absolute top-16 right-12"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp2-image"
+              className="absolute top-1/2 left-12"
+            />
+          </>
+        ) : imageLayout === 2 ? (
+          <>
+            <img
+              src="/assets/backgrounds/gradient-background.png"
+              alt="background"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp-image"
+              className="absolute top-16 right-12"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp2-image"
+              className="absolute top-1/2 left-12"
+            />
+          </>
+        ) : (
+          <>
+            <img
+              src="/assets/backgrounds/gradient-background.png"
+              alt="background"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp-image"
+              className="absolute top-16 right-12"
+            />
+            <img
+              src="/assets/services/cp-image.png"
+              alt="cp2-image"
+              className="absolute top-1/2 left-12"
+            />
+          </>
+        )}
+      </div>
+      <div className="flex flex-col items-start justify-center gap-6">
+        <p className={linkClassName}>Financiamiento energetico</p>
+        <h3 className={titleClassName}>Cataliza tu proyecto</h3>
+        <p className={descriptionClassName}>
+          Recibe orientación experta para maximizar el éxito de tus proyectos de
+          energía renovable.
+        </p>
+        <ul className="flex flex-col gap-6">
+          <ServiceListItem
+            type={type === "light" || type === "light-blue" ? "dark" : "light"}
+            content="Rápido acceso a fondos"
+          />
+          <ServiceListItem
+            type={type === "light" || type === "light-blue" ? "dark" : "light"}
+            content="Proceso simple y transparente"
+          />
+          <ServiceListItem
+            type={type === "light" || type === "light-blue" ? "dark" : "light"}
+            content="Financiamiento adaptado"
+          />
         </ul>
+        <Button
+          type={type === "dark" ? "white" : "dark-blue"}
+          styles={buttonClassName}
+          content="Conviértete en Proyectista"
+        />
       </div>
     </div>
   );
