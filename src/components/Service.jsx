@@ -15,6 +15,7 @@ function Service({ type, imageLayout }) {
     linkClassName += " text-var-dark-blue";
   } else if (type === "light-blue") {
     className += " bg-var-very-light-grey";
+    titleClassName += " text-var-dark-blue";
   } else if (type === "dark") {
     className += " bg-var-dark-blue";
     linkClassName += " text-white";
@@ -43,37 +44,27 @@ function Service({ type, imageLayout }) {
             />
           </>
         ) : imageLayout === 2 ? (
-          <>
+          <div className="flex flex-col items-end">
             <img
-              src="/assets/backgrounds/gradient-background.png"
+              src="/assets/services/ifb-image.png"
               alt="background"
             />
             <img
-              src="/assets/services/cp-image.png"
+              src="/assets/services/ifb2-image.png"
               alt="cp-image"
-              className="absolute top-16 right-12"
+              className=""
             />
-            <img
-              src="/assets/services/cp-image.png"
-              alt="cp2-image"
-              className="absolute top-1/2 left-12"
-            />
-          </>
+          </div>
         ) : (
           <>
             <img
-              src="/assets/backgrounds/gradient-background.png"
+              src="/assets/backgrounds/blue-background.png"
               alt="background"
             />
             <img
-              src="/assets/services/cp-image.png"
+              src="/assets/services/ati-image.png"
               alt="cp-image"
               className="absolute top-16 right-12"
-            />
-            <img
-              src="/assets/services/cp-image.png"
-              alt="cp2-image"
-              className="absolute top-1/2 left-12"
             />
           </>
         )}
@@ -102,8 +93,16 @@ function Service({ type, imageLayout }) {
         <Button
           type={type === "dark" ? "white" : "dark-blue"}
           styles={buttonClassName}
-          content="Conviértete en Proyectista"
-        />
+        >
+          Conviértete en Proyectista{" "}
+          <span>
+            <img
+              src="/assets/icons/little-arrow-white.webp"
+              alt="arrow-up"
+              className="w-5"
+            />
+          </span>
+        </Button>
       </div>
     </div>
   );
