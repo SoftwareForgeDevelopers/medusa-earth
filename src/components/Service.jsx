@@ -1,7 +1,7 @@
 import Button from "./Button";
 import ServiceListItem from "./ServiceListItem";
 
-function Service({ type, imageLayout }) {
+function Service({ type, imageLayout, link, title, description, listTexts, buttonText }) {
   let className =
     "m-64 px-42 py-41 flex flex-row items-center justify-around gap-80 rounded-34";
   let titleClassName = "text-45 font-w-bold";
@@ -70,31 +70,30 @@ function Service({ type, imageLayout }) {
         )}
       </div>
       <div className="flex flex-col items-start justify-center gap-6">
-        <p className={linkClassName}>Financiamiento energetico</p>
-        <h3 className={titleClassName}>Cataliza tu proyecto</h3>
+        <p className={linkClassName}>{link}</p>
+        <h3 className={titleClassName}>{title}</h3>
         <p className={descriptionClassName}>
-          Recibe orientación experta para maximizar el éxito de tus proyectos de
-          energía renovable.
+          {description}
         </p>
         <ul className="flex flex-col gap-6">
           <ServiceListItem
             type={type === "light" || type === "light-blue" ? "dark" : "light"}
-            content="Rápido acceso a fondos"
+            content={listTexts[0]}
           />
           <ServiceListItem
             type={type === "light" || type === "light-blue" ? "dark" : "light"}
-            content="Proceso simple y transparente"
+            content={listTexts[1]}
           />
           <ServiceListItem
             type={type === "light" || type === "light-blue" ? "dark" : "light"}
-            content="Financiamiento adaptado"
+            content={listTexts[2]}
           />
         </ul>
         <Button
           type={type === "dark" ? "white" : "dark-blue"}
           styles={buttonClassName}
         >
-          Conviértete en Proyectista{" "}
+          {buttonText + " "}
           <span>
             <img
               src="/assets/icons/little-arrow-white.webp"
