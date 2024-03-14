@@ -1,9 +1,17 @@
 import Button from "./Button";
 import ServiceListItem from "./ServiceListItem";
 
-function Service({ type, imageLayout, link, title, description, listTexts, buttonText }) {
+function Service({
+  type,
+  imageLayout,
+  link,
+  title,
+  description,
+  listTexts,
+  buttonText,
+}) {
   let className =
-    "m-64 px-42 py-41 flex flex-row items-center justify-around gap-80 rounded-34";
+    "mx-64 px-42 py-41 flex flex-row items-center justify-around gap-80 rounded-34";
   let titleClassName = "text-45 font-w-bold";
   let buttonClassName = "font-w-regular h-51 mt-10 text-18";
   let linkClassName = "text-18 underline font-w-bold";
@@ -45,10 +53,7 @@ function Service({ type, imageLayout, link, title, description, listTexts, butto
           </>
         ) : imageLayout === 2 ? (
           <div className="flex flex-col items-end">
-            <img
-              src="/assets/services/ifb-image.png"
-              alt="background"
-            />
+            <img src="/assets/services/ifb-image.png" alt="background" />
             <img
               src="/assets/services/ifb2-image.png"
               alt="cp-image"
@@ -72,9 +77,7 @@ function Service({ type, imageLayout, link, title, description, listTexts, butto
       <div className="flex flex-col items-start justify-center gap-6">
         <p className={linkClassName}>{link}</p>
         <h3 className={titleClassName}>{title}</h3>
-        <p className={descriptionClassName}>
-          {description}
-        </p>
+        <p className={descriptionClassName}>{description}</p>
         <ul className="flex flex-col gap-6">
           <ServiceListItem
             type={type === "light" || type === "light-blue" ? "dark" : "light"}
@@ -91,8 +94,7 @@ function Service({ type, imageLayout, link, title, description, listTexts, butto
         </ul>
         <Button
           type={type === "dark" ? "white" : "dark-blue"}
-          styles={buttonClassName}
-        >
+          styles={buttonClassName}>
           {buttonText + " "}
           <span>
             <img
