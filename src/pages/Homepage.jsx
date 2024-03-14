@@ -8,6 +8,7 @@ import ServicesSection from "../components/ServicesSection";
 import TeamSection from "../components/TeamSection";
 import BlogSection from "../components/BlogSection";
 import Newsletter from "../components/Newsletter";
+import ProjectsSection from "../components/ProjectsSection";
 
 function Homepage() {
   return (
@@ -18,6 +19,7 @@ function Homepage() {
       <ValuesSection />
       <AboutMedusaSection />
       <TeamSection />
+      <ProjectsSection />
       <ServicesSection />
       <BlogSection />
       <Newsletter />

@@ -15,6 +15,10 @@ function Button({ type, styles, content, children }) {
     background = "transparent";
     border = "white";
     textColor = "white";
+  } else if (type === "white-without-border") {
+    background = "white";
+    border = "white";
+    textColor = "var-dark-blue";
   }
 
   classNames += `text-${textColor} bg-${background} border border-${border} rounded-full ${styles}`;
