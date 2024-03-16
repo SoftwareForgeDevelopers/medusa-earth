@@ -1,6 +1,4 @@
-import Header from "../components/Header";
 import ValuesSection from "../components/ValuesSection";
-import Footer from "../components/Footer";
 import IntroSection from "../components/IntroSection";
 import RegulationsSection from "../components/RegulationsSection";
 import AboutMedusaSection from "../components/AboutMedusaSection";
@@ -9,11 +7,11 @@ import TeamSection from "../components/TeamSection";
 import BlogSection from "../components/BlogSection";
 import Newsletter from "../components/Newsletter";
 import ProjectsSection from "../components/ProjectsSection";
+import Layout from "../layout/Layout";
 
 function Homepage() {
   return (
-    <div className="">
-      <Header />
+    <Layout header={true} footer={true}>
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />
@@ -23,8 +21,7 @@ function Homepage() {
       <ServicesSection />
       <BlogSection />
       <Newsletter />
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 
