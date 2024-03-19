@@ -22,6 +22,8 @@ export default {
         19: "19px",
         28: "28px",
         30: "30px",
+        32: "32px",
+        45: "45px",
         48: "48px",
         75: "75px",
         80: "80px",
@@ -51,6 +53,7 @@ export default {
         20: "20px",
         42: "42px",
         100: "100px",
+        172: "172px",
         236: "236px",
         289: "289.33px",
         247: "247px",
@@ -92,6 +95,7 @@ export default {
         364: "364px",
         400: "400px",
         412: "412px",
+        426: "426px",
         608: "608px",
         617: "617px",
         702: "702px",
@@ -136,15 +140,5 @@ export default {
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".clip-bottom-right": {
-          clipPath:
-            "polygon(100% 0, 100% 56%, 100% 80%, 80% 80%, 80% 100%, 70% 100%, 59% 100%, 0 100%, 0% 35%, 0 0)",
-        },
-      };
-      addUtilities(newUtilities);
-    },
-  ],
+  plugins: [],
 };

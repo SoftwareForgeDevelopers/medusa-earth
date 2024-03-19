@@ -23,9 +23,11 @@ function Button({ type, styles, content, children }) {
 
   classNames += `text-${textColor} bg-${background} border border-${border} rounded-full ${styles}`;
 
-  return <button className={classNames}>
-    {content} {children}
-    </button>;
+  return (
+    <button className={classNames}>
+      {content} {children}
+    </button>
+  );
 }
 
 export default Button;

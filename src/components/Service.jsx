@@ -100,7 +100,7 @@ function Service({
             <img
               src="/assets/icons/little-arrow-white.webp"
               alt="arrow-up"
-              className="w-5"
+              className="w-5 h-4"
             />
           </span>
         </Button>

@@ -24,13 +24,17 @@ function Newsletter() {
         </div>
         <form className="flex px-10 gap-3">
           <input
+            id="name"
             type="text"
             placeholder="Nombre y Apellido"
+            autoComplete="name"
             className="w-260 h-50 py-14 px-6 border border-var-dark-blue rounded-47"
           />
           <input
+            id="email"
             type="email"
             placeholder="Email"
+            autoComplete="email"
             className="w-260 h-50 py-14 px-6 border border-var-dark-blue rounded-47"
           />
           <Button type="dark-blue" styles="font-w-regular w-260">
@@ -39,7 +43,7 @@ function Newsletter() {
               <img
                 src="/assets/icons/little-arrow-white.webp"
                 alt="arrow-up"
-                className="w-5"
+                className="w-5 h-4"
               />
             </span>
           </Button>

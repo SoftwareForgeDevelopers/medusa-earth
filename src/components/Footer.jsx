@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer () {
   return (
-    <footer className="h-80 items-center bg-center bg-cover bg-[url('/assets/backgrounds/dark-sky.webp')] text-white mt-36">
+    <footer className="h-80 items-center bg-center bg-cover bg-[url('/assets/backgrounds/dark-sky.webp')] text-white ">
       <div className="px-16 py-20 container mx-auto flex justify-between items-center">
         <figure className="h-12 w-44">
           <img

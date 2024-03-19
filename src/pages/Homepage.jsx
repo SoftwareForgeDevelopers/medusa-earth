@@ -8,6 +8,7 @@ import BlogSection from "../components/BlogSection";
 import Newsletter from "../components/Newsletter";
 import ProjectsSection from "../components/ProjectsSection";
 import Layout from "../layout/Layout";
+import FaqSection from "../components/FaqSection";
 
 function Homepage() {
   return (
@@ -21,6 +22,7 @@ function Homepage() {
       <ServicesSection />
       <BlogSection />
       <Newsletter />
+      <FaqSection />
     </Layout>
   );
 }
