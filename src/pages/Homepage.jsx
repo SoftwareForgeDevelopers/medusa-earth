@@ -12,7 +12,7 @@ import FaqSection from "../components/FaqSection";
 
 function Homepage() {
   return (
-    <Layout header={true} footer={true}>
+    <Layout navbar={true} footer={true}>
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />

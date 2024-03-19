@@ -2,7 +2,7 @@ import Button from "./Button";
 
 function IntroSection() {
   return (
-    <section className="mt-20">
+    <section>
       <img
         src="/assets/backgrounds/intro-banner.webp"
         alt="main image"

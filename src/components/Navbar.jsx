@@ -1,6 +1,6 @@
 import Button from "./Button";
 
-function Header() {
+function Navbar() {
   return (
     <header className="px-16 py-4 w-full flex items-center justify-between fixed top-0 bg-white z-50">
       <figure className="h-9">
@@ -30,4 +30,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Navbar;
