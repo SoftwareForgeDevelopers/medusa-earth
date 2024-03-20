@@ -9,6 +9,8 @@ import Newsletter from "../components/Newsletter";
 import ProjectsSection from "../components/ProjectsSection";
 import Layout from "../layout/Layout";
 import FaqSection from "../components/FaqSection";
+import InfoBanner from "../components/InfoBanner";
+import banner from "../data/banner";
 
 function Homepage() {
   return (
@@ -23,6 +25,7 @@ function Homepage() {
       <BlogSection />
       <Newsletter />
       <FaqSection />
+      <InfoBanner {...banner[0]} />
     </Layout>
   );
 }

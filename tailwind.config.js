@@ -137,6 +137,8 @@ export default {
       backgroundImage: {
         "gradient-border-blue": `linear-gradient(138.35deg, #041456 2.75%, rgba(172,235,239,0.937255) 97.73%)`,
         "project-section-gradient": `linear-gradient(235.75deg, rgba(4, 20, 86, 0.3) 3.43%, rgba(172, 235, 239, 0.281176) 95.36%)`,
+        "gradient-seated-man": `linear-gradient(90deg, rgba(4, 20, 86, 0.2) 50%, rgba(4, 20, 86, 0) 100%)`,
+        "gradient-blue-horizontal-lines": `linear-gradient(120deg, rgba(4, 20, 86, 0.8) 40%, rgba(165, 255, 255, 0.8) 100%)`,
       },
     },
   },
