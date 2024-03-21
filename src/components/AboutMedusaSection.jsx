@@ -4,7 +4,7 @@ import Label from "./Label";
 
 function AboutMedusaSection() {
   return (
-    <div className="h-890 flex py-28 px-16 gap-20 @screen md:px-32 lg:px-52">
+    <div className="h-890 flex py-28 px-16 gap-20 tablet:px-32 laptop:px-52">
       <div className="w-1/2 relative">
         <img
           src="/assets/backgrounds/solar-panels.webp"
