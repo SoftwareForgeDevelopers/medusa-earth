@@ -11,7 +11,7 @@ function TeamSection() {
           Conocé al equipo detrás de{" "}
           <span className="font-w-bold">Medusa Energy</span>
         </h3>
-        <p className="text-18">
+        <p className="text-[18px]">
           Revelando las mentes que dan forma a las estrategias futuras.
         </p>
       </div>

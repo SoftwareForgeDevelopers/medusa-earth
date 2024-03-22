@@ -11,7 +11,7 @@ const QuestionDropDown = ({ question, answer, dark }) => {
         <details className="group">
           <summary className="flex justify-between cursor-pointer list-none">
             <h3 className="text-2xl font-w-bold">{question}</h3>
-            <figure className="w-18 h-18 flex-shrink-0">
+            <figure className="w-[18px] h-[18px] flex-shrink-0">
               <img
                 src={`/assets/icons/${dark ? "cross-white" : "cross-blue"}.webp`}
                 alt="Cross"

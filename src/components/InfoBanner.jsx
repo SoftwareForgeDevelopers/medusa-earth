@@ -13,9 +13,9 @@ function InfoBanner({
   return (
     <div className="flex flex-col w-full items-center py-[90px] px-[65px]">
       <div
-        className={`relative flex flex-col h-[537px] w-full pt-[75px] pb-[45px] px-16 rounded-38 bg-cover bg-[0%_75%]`}
+        className={`relative flex flex-col h-[537px] w-full pt-[75px] pb-[45px] px-16 rounded-[38px] bg-cover bg-[0%_75%]`}
         style={{ backgroundImage: `url('${image}')` }}>
-        <div className={`absolute inset-0 ${bgGradientClass} rounded-38`}></div>
+        <div className={`absolute inset-0 ${bgGradientClass} rounded-[38px]`}></div>
 
         <div className="flex flex-col gap-[19px] z-10">
           {label && <Label text={label.text} white={label?.white || null} />}

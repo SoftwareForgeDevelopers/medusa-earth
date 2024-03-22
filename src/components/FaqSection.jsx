@@ -64,12 +64,12 @@ const QuestionCardCaller = () => {
 
 function MoreInfoCard() {
   return (
-    <div className="flex justify-between items-center py-[34px] px-[37px] rounded-28 bg-white">
+    <div className="flex justify-between items-center py-[34px] px-[37px] rounded-[28px] bg-white">
       <div className="flex flex-col gap-4 w-2/3">
-        <h3 className="text-var-dark-blue text-45">
+        <h3 className="text-var-dark-blue text-[45px]">
           <span className="font-w-bold">¿Seguís teniendo consultas?</span>
         </h3>
-        <p className="max-w-lg text-left text-18">
+        <p className="max-w-lg text-left text-[18px]">
           Si tenés más preguntas o necesitas clarificaciones adicionales,
           nuestro equipo está listo para ofrecerte la información que necesitas.
         </p>
@@ -80,7 +80,7 @@ function MoreInfoCard() {
           <img
             src="/assets/icons/little-arrow-white.webp"
             alt="arrow-up"
-            className="w-18 h-4"
+            className="w-[18px] h-4"
           />
         </span>
       </Button>
@@ -91,8 +91,8 @@ function MoreInfoCard() {
 function FaqSection() {
   return (
     <section className="flex  flex-col mt-28 mb-5 py-28 px-16 gap-12 rounded-ss-70 rounded-ee-70 bg-cover bg-center bg-var-dark-blue">
-      <div className="flex flex-col gap-45">
-        <div className="flex flex-col gap-32">
+      <div className="flex flex-col gap-[45px]">
+        <div className="flex flex-col gap-[32px]">
           <Label text="F.A.Q" white={true} />
           <h3 className="text-white text-5xl">
             <span className="font-w-bold">Preguntas Frecuentes: </span>

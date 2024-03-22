@@ -5,7 +5,6 @@ import Button from "./Button";
 import projects from "../data/projects";
 
 function ProjectsSection() {
-
   return (
     <section className="flex flex-col my-28 rounded-ss-70 rounded-ee-70 py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity">
       <div>
@@ -16,13 +15,13 @@ function ProjectsSection() {
             <span className="block">Explorá Nuestro</span>
             <span className="block">Futuro Energético</span>
           </h3>
-          <p className="w-412 text-18">
+          <p className="w-[412px] text-[18px]">
             Explora proyectos innovadores que están impulsando el cambio hacia
             un futuro más sostenible en energía renovable.
           </p>
           <Button
             type="white-without-border"
-            styles="w-52 font-w-regular text-18">
+            styles="w-52 font-w-regular text-[18px]">
             Explorar Proyectos
             <span>
               <img
