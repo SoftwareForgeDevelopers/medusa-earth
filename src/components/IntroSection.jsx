@@ -30,7 +30,7 @@ function IntroSection() {
         className={`absolute inset-0 bg-gradient-blue-from-up tablet:bg-gradient-blue-from-left tablet:rounded-ss-[300px] tablet:rounded-ee-[300px]`}
       />
 
-      <div className="flex flex-col w-full pt-[37px] px-[25px] gap-3 text-center z-10 tablet:absolute tablet:inset-0 tablet:items-start tablet:justify-center tablet:px-[40px] desktop:px-[90px]">
+      <div className="flex flex-col w-full pt-[37px] px-[25px] gap-3 text-center z-10 max-h-780px:tablet:pt-0 tablet:absolute tablet:inset-0 tablet:items-start tablet:justify-center tablet:px-[40px] desktop:px-[90px]">
         <p className="text-white text-xl tablet:text-[22px]">
           Invierte en un Futuro Sostenible para las Próximas Generaciones.
         </p>
@@ -61,7 +61,7 @@ function IntroSection() {
         </div>
       </div>
 
-      <div className="mb-[28px] mx-[25px] tablet:absolute tablet:bottom-0 tablet:left-0 tablet:w-[466px] tablet:pb-[78px] tablet:mx-[40px] desktop:mx-[90px]">
+      <div className="mb-[28px] mx-[25px] tablet:absolute tablet:bottom-0 tablet:left-0 tablet:w-[466px] max-h-800px:tablet:mb-[30px] tablet:mb-[78px] tablet:mx-[40px] desktop:mx-[90px]">
         <MiniCard
           data={[
             {

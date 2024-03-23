@@ -22,6 +22,10 @@ export default {
       // => @media (min-width: 1920px) { ... }
     },
     extend: {
+      screens: {
+        'max-h-780px': {'raw': '(max-height: 780px)'},
+        'max-h-800px': {'raw': '(max-height: 800px)'},
+      },
       fontWeight: {
         "w-regular": 400,
         "w-bold": 600,
