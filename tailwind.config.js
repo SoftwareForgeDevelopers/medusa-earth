@@ -49,6 +49,8 @@ export default {
         "project-section-gradient": `linear-gradient(235.75deg, rgba(4, 20, 86, 0.3) 3.43%, rgba(172, 235, 239, 0.281176) 95.36%)`,
         "gradient-seated-man": `linear-gradient(90deg, rgba(4, 20, 86, 0.2) 50%, rgba(4, 20, 86, 0) 100%)`,
         "gradient-blue-horizontal-lines": `linear-gradient(120deg, rgba(4, 20, 86, 0.8) 40%, rgba(165, 255, 255, 0.8) 100%)`,
+        "gradient-blue-from-left": `linear-gradient(89.35deg, rgba(4, 20, 86, 0.9) 0.54%, rgba(4, 20, 86, 0) 56.6%)`,
+        "gradient-blue-from-up": `linear-gradient(181.42deg, rgba(4, 20, 86, 0.9) 1.05%, rgba(4, 20, 86, 0) 62.29%)`
       },
     },
   },
