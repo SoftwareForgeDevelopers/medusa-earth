@@ -1,10 +1,10 @@
 function RegulationsSection() {
   return (
-    <section className="py-[83px] text-center text-var-light-grey text-[20px] flex flex-col items-center justify-center">
-      <p>
+    <section className="flex flex-col items-center justify-center py-[83px] gap-[30px] text-center text-var-light-grey text-[20px]">
+      <p className="px-[25px]">
         Con la confianza de los entes reguladores más importantes del mundo:
       </p>
-      <div className="flex flex-row items-center justify-center">
+      <div className="flex-col flex items-center justify-center laptop:flex-row">
         <img
           src="/assets/logo/suncolombia-logo.png"
           alt="suncolombia-logo"
