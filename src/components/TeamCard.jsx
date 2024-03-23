@@ -4,7 +4,7 @@ function TeamCard({
 	teamMember,
 }) {
 	return (
-		<div className="flex flex-col items-center w-96 h-501 gap-6">
+		<div className="flex flex-col items-center w-96 h-[501px] gap-6">
 			<div className="w-full h-96 rounded-3xl p-2 bg-gradient-border-blue">
 				<img
 					src={teamMember.imageUrl}
@@ -13,12 +13,12 @@ function TeamCard({
 				/>
 			</div>
 
-			<div className="flex flex-col w-full h-93 gap-3">
+			<div className="flex flex-col w-full h-[93px] gap-3">
 				<div>
-					<h4 className="text-20 font-w-bold text-var-dark-blue">
+					<h4 className="text-[20px] font-w-bold text-var-dark-blue">
 						{teamMember.name}
 					</h4>
-					<p className="text-18">{teamMember.role}</p>
+					<p className="text-[18px]">{teamMember.role}</p>
 				</div>
 				<div className="flex items-center gap-1">
 					{teamMember.phone && (
