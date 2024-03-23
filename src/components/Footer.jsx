@@ -48,8 +48,8 @@ function Footer () {
           </a>
         </div>
       </div>
-      <hr className="border-t-0.2 border-opacity-80 border-white" />
-      <div className="flex justify-center items-center gap-6 my-43.5">
+      <hr className="border-t-[0.2px] border-opacity-80 border-white" />
+      <div className="flex justify-center items-center gap-6 my-[43.5px]">
         <p>© 2023 Medusa. All rights reserved.</p>
         <p>Privacy Policy</p>
         <p>Terms of Service</p>

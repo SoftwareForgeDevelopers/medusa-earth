@@ -6,7 +6,9 @@ function Layout({ navbar, footer, children }) {
   return (
     <div className="flex flex-col min-h-screen">
       {navbar && <Navbar />}
-      <div className="flex flex-col flex-grow mt-20">{children}</div>
+      <div className="flex flex-col flex-grow mt-16 tablet:mt-20">
+        {children}
+      </div>
       {footer && <Footer />}
     </div>
   );

@@ -3,16 +3,16 @@ import Button from "./Button";
 
 function ProjectCard({ project }) {
 	return (
-		<div className="flex flex-col h-585 w-400 p-18 gap-5 rounded-38 shadow-2xl bg-white">
-			<figure className="h-236 w-full overflow-hidden rounded-20 relative">
+		<div className="flex flex-col h-[585px] w-[400px] p-[18px] gap-5 rounded-[38px] shadow-2xl bg-white">
+			<figure className="h-[236px] w-full overflow-hidden rounded-[20px] relative">
 				<img
 					src={project.imageUrl}
 					alt={project.title}
-					className="h-236 w-full object-cover"
+					className="h-[236px] w-full object-cover"
 				/>
 				<Button
 					type="white-without-border"
-					styles="absolute w-105 h-42 font-w-bold text-sm top-2 right-3"
+					styles="absolute w-[105px] h-[42px] font-w-bold text-sm top-2 right-3"
 					content={project.status}
 				/>
 			</figure>
@@ -25,16 +25,16 @@ function ProjectCard({ project }) {
 					<p className="text-sm font-w-bold text-var-dark-blue">Objetivo</p>
 				</div>
 				<div className="flex justify-between items-center">
-					<p className="text-20 font-w-bold text-var-dark-blue">
+					<p className="text-[20px] font-w-bold text-var-dark-blue">
 						{project.overallProfitability}%
 					</p>
-					<p className="text-20 font-w-bold text-var-dark-blue">
+					<p className="text-[20px] font-w-bold text-var-dark-blue">
 						{project.targetCollection}
 					</p>
 				</div>
 			</div>
 
-			<div className="relative h-19 w-364 bg-var-grey-blue rounded-xl">
+			<div className="relative h-[19px] w-[364px] bg-var-grey-blue rounded-xl">
 				<div
 					style={{
 						width:
@@ -49,14 +49,14 @@ function ProjectCard({ project }) {
 
 			<div className="flex flex-col gap-4">
 				<div>
-					<h3 className="text-22 font-w-bold text-var-dark-blue">
+					<h3 className="text-[22px] font-w-bold text-var-dark-blue">
 						{project.title}
 					</h3>
 					<p className="text-sm font-w-bold text-var-dark-blue">
 						{project.location}
 					</p>
 				</div>
-				<p className="text-15 text-var-dark-blue">{project.description}</p>
+				<p className="text-[15px] text-var-dark-blue">{project.description}</p>
 				<Button type="dark-blue" styles="w-32 font-w-regular text-sm">
 					Ver Proyecto
 					<span>
