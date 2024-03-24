@@ -9,10 +9,13 @@ import Newsletter from "../components/Newsletter";
 import ProjectsSection from "../components/ProjectsSection";
 import Layout from "../layout/Layout";
 import ContactUs from "../components/ContactUs";
+import FaqSection from "../components/FaqSection";
+import InfoBanner from "../components/InfoBanner";
+import banner from "../data/banner";
 
 function Homepage() {
   return (
-    <Layout header={true} footer={true}>
+    <Layout navbar={true} footer={true} isHomepage={true}>
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />
@@ -23,6 +26,8 @@ function Homepage() {
       <BlogSection />
       <Newsletter />
       <ContactUs />
+      <FaqSection />
+      <InfoBanner {...banner[0]} />
     </Layout>
   );
 }

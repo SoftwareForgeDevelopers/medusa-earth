@@ -1,13 +1,15 @@
 import React from "react";
-import Header from "../components/Header";
+import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function Layout({ header, footer, children }) {
+function Layout({ navbar, footer, isHomepage, children }) {
   return (
-    <div>
-      {header ? <Header /> : null}
-      {children}
-      {footer ? <Footer /> : null}
+    <div className="flex flex-col min-h-screen">
+      {navbar && <Navbar isHomepage={isHomepage} />}
+      <div className="flex flex-col flex-grow mt-16 tablet:mt-20">
+        {children}
+      </div>
+      {footer && <Footer />}
     </div>
   );
 }

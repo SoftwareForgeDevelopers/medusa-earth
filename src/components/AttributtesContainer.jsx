@@ -2,7 +2,7 @@ import AttributtesCard from "./AttributtesCard";
 
 function AttributteContainer() {
   return (
-    <div className="flex flex-row gap-48">
+    <div className="flex flex-row gap-[48px]">
       <AttributtesCard
         type="dark"
         title="Financiamiento simplificado"

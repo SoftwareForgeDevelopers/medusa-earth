@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer () {
   return (
-    <footer className="h-80 items-center bg-center bg-cover bg-[url('/assets/backgrounds/dark-sky.webp')] text-white mt-36">
+    <footer className="h-80 items-center bg-center bg-cover bg-[url('/assets/backgrounds/dark-sky.webp')] text-white ">
       <div className="px-16 py-20 container mx-auto flex justify-between items-center">
         <figure className="h-12 w-44">
           <img
@@ -48,8 +48,8 @@ function Footer () {
           </a>
         </div>
       </div>
-      <hr className="border-t-0.2 border-opacity-80 border-white" />
-      <div className="flex justify-center items-center gap-6 my-43.5">
+      <hr className="border-t-[0.2px] border-opacity-80 border-white" />
+      <div className="flex justify-center items-center gap-6 my-[43.5px]">
         <p>© 2023 Medusa. All rights reserved.</p>
         <p>Privacy Policy</p>
         <p>Terms of Service</p>

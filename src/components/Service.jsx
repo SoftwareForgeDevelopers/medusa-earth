@@ -11,11 +11,11 @@ function Service({
   buttonText,
 }) {
   let className =
-    "mx-64 px-42 py-41 flex flex-row items-center justify-around gap-80 rounded-34";
-  let titleClassName = "text-45 font-w-bold";
-  let buttonClassName = "font-w-regular h-51 mt-10 text-18";
-  let linkClassName = "text-18 underline font-w-bold";
-  let descriptionClassName = "text-22";
+    "mx-[64px] px-[42px] py-[41px] flex flex-row items-center justify-around gap-[80px] rounded-[34px]";
+  let titleClassName = "text-[45px] font-w-bold";
+  let buttonClassName = "font-w-regular h-[51px] mt-10 text-[18px]";
+  let linkClassName = "text-[18px] underline font-w-bold";
+  let descriptionClassName = "text-[22px]";
 
   if (type === "light") {
     className += " bg-var-very-light-grey";
@@ -100,7 +100,7 @@ function Service({
             <img
               src="/assets/icons/little-arrow-white.webp"
               alt="arrow-up"
-              className="w-5"
+              className="w-5 h-4"
             />
           </span>
         </Button>

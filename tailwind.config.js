@@ -2,111 +2,29 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      phone: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      tablet: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      laptop: "1024px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      wide: "1536px",
+      // => @media (min-width: 1536px) { ... }
+
+      ultra: "1920px",
+      // => @media (min-width: 1920px) { ... }
+    },
     extend: {
-      spacing: {
-        90: "90px",
-      },
-      borderRadius: {
-        20: "20px",
-        34: "34px",
-        47: "47px",
-        52: "52px",
-        25: "25px",
-        28: "28px",
-        30: "30px",
-        38: "38px",
-        70: "70px",
-      },
-      gap: {
-        8: "8px",
-        19: "19px",
-        28: "28px",
-        30: "30px",
-        48: "48px",
-        75: "75px",
-        80: "80px",
-        128: "128px",
-        52: "52px",
-      },
-      padding: {
-        14: "14px",
-        18: "18px",
-        21: "21px",
-        25: "25px",
-        41: "41px",
-        42: "42px",
-        48: "48px",
-        83: "83px",
-      },
-      margin: {
-        43.5: "43.5px",
-        64: "64px",
-      },
-      borderWidth: {
-        0.2: "0.2px",
-      },
-      height: {
-        18: "18px",
-        19: "19px",
-        20: "20px",
-        42: "42px",
-        100: "100px",
-        236: "236px",
-        289: "289.33px",
-        247: "247px",
-        63: "63.33px",
-        66: "66px",
-        50: "50px",
-        51: "51px",
-        56: "56px",
-        31: "31.33px",
-        32: "32px",
-        33: "33px",
-        20.89: "20.89px",
-        22.52: "22.52px",
-        93: "93px",
-        501: "501px",
-        552: "552px",
-        585: "585px",
-        890: "890px",
-      },
-      width: {
-        18: "18px",
-        20: "20px",
-        392: "392px",
-        63: "63.33px",
-        66: "66px",
-        99: "99px",
-        100: "100px",
-        31: "31.33px",
-        22.52: "22.52px",
-        20.89: "20.89px",
-        105: "105px",
-        123: "123px",
-        162: "162px",
-        198: "198px",
-        205: "205px",
-        229: "229px",
-        260: "260px",
-        338: "338px",
-        364: "364px",
-        400: "400px",
-        412: "412px",
-        608: "608px",
-        617: "617px",
-        702: "702px",
-      },
-      fontSize: {
-        15: "15px",
-        18: "18px",
-        18: "18px",
-        20: "20px",
-        22: "22px",
-        25: "25px",
-        30: "30px",
-        45: "45px",
-        60: "60px",
-        70: "70px",
+      screens: {
+        'max-h-780px': {'raw': '(max-height: 780px)'},
+        'max-h-800px': {'raw': '(max-height: 800px)'},
       },
       fontWeight: {
         "w-regular": 400,
@@ -133,18 +51,12 @@ export default {
       backgroundImage: {
         "gradient-border-blue": `linear-gradient(138.35deg, #041456 2.75%, rgba(172,235,239,0.937255) 97.73%)`,
         "project-section-gradient": `linear-gradient(235.75deg, rgba(4, 20, 86, 0.3) 3.43%, rgba(172, 235, 239, 0.281176) 95.36%)`,
+        "gradient-seated-man": `linear-gradient(90deg, rgba(4, 20, 86, 0.2) 50%, rgba(4, 20, 86, 0) 100%)`,
+        "gradient-blue-horizontal-lines": `linear-gradient(120deg, rgba(4, 20, 86, 0.8) 40%, rgba(165, 255, 255, 0.8) 100%)`,
+        "gradient-blue-from-left": `linear-gradient(89.35deg, rgba(4, 20, 86, 0.9) 0.54%, rgba(4, 20, 86, 0) 56.6%)`,
+        "gradient-blue-from-up": `linear-gradient(181.42deg, rgba(4, 20, 86, 0.9) 1.05%, rgba(4, 20, 86, 0) 62.29%)`
       },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      const newUtilities = {
-        ".clip-bottom-right": {
-          clipPath:
-            "polygon(100% 0, 100% 56%, 100% 80%, 80% 80%, 80% 100%, 70% 100%, 59% 100%, 0 100%, 0% 35%, 0 0)",
-        },
-      };
-      addUtilities(newUtilities);
-    },
-  ],
+  plugins: [],
 };
