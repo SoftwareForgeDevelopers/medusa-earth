@@ -8,7 +8,7 @@ const items = [
   { name: "Proyectos", link: "#projects-section" },
   { name: "Servicios", link: "#services-section" },
   { name: "FAQ", link: "#faq-section" },
-  { name: "Contacto", link: "#" },
+  { name: "Contacto", link: "#contact-us-section" },
 ];
 
 const MenuItems = ({ items, isHomepage }) => {
@@ -63,7 +63,7 @@ const Navbar = ({ isHomepage }) => {
             .querySelector(sectionId)
             .scrollIntoView({ behavior: "smooth" });
           localStorage.removeItem("sectionId");
-        }, 100);
+        }, 500);
       }
     };
   }, []);

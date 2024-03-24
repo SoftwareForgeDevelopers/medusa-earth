@@ -1,6 +1,6 @@
 function ContactUs() {
   return (
-    <div className="mx-[64px] my-[112px] flex flex-row justify-between  ">
+    <div id="contact-us-section" className="mx-[64px] my-[112px] flex flex-row justify-between  ">
       <div className="flex flex-col justify-around">
         <button className="rounded-[25px] border border-solid border-var-dark-blue text-var-dark-blue w-[114px] px-[20px] py-[4px]">
           Contacto
