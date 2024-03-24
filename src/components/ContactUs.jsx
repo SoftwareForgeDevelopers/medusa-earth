@@ -28,15 +28,16 @@ function ContactUs() {
           <input
             name="name"
             type="text"
-            className="w-[595px] h-50 py-14 px-6 border border-var-dark-blue rounded-47"
+            className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
           />
         </div>
         <div className="flex flex-col gap-[8px]">
           <label htmlFor="email">Email</label>
           <input
-            name="email"
+            id="email"
             type="text"
-            className="w-[595px] h-50 py-14 px-6 border border-var-dark-blue rounded-47"
+            autoComplete="name"
+            className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
           />
         </div>
         <div className="flex flex-col gap-[8px]">
