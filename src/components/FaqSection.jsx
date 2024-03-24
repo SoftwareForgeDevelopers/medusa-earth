@@ -90,7 +90,7 @@ function MoreInfoCard() {
 
 function FaqSection() {
   return (
-    <section className="flex flex-col mt-28 mb-5 py-28 px-16 gap-12 rounded-ss-[70px] rounded-ee-[70px] bg-cover bg-center bg-var-dark-blue">
+    <section id="faq-section" className="flex flex-col mt-28 mb-5 py-28 px-16 gap-12 rounded-ss-[70px] rounded-ee-[70px] bg-cover bg-center bg-var-dark-blue">
       <div className="flex flex-col gap-[45px]">
         <div className="flex flex-col gap-[32px]">
           <Label text="F.A.Q" white={true} />

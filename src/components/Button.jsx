@@ -1,4 +1,4 @@
-function Button({ type, styles, content, children }) {
+function Button({ type, styles, content, onClick, children }) {
   let classNames =
     "flex justify-center items-center px-5 gap-2 h-12 font-w-bold ";
   let background, border, textColor;
@@ -24,7 +24,7 @@ function Button({ type, styles, content, children }) {
   classNames += `text-${textColor} bg-${background} border border-${border} rounded-full ${styles}`;
 
   return (
-    <button className={classNames}>
+    <button className={classNames} onClick={onClick}>
       {content} {children}
     </button>
   );

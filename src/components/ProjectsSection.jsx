@@ -6,7 +6,7 @@ import { useGetProjects } from "../services/Sanity.service";
 function ProjectsSection() {
   const projects = useGetProjects();
   return (
-    <section className="flex flex-col my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity">
+    <section id="projects-section" className="flex flex-col my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity">
       <div>
         <Label text="Proyectos" white={true} />
 

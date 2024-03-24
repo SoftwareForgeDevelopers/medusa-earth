@@ -14,7 +14,7 @@ import banner from "../data/banner";
 
 function Homepage() {
   return (
-    <Layout navbar={true} footer={false}>
+    <Layout navbar={true} footer={true} isHomepage={true}>
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />

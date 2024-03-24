@@ -3,7 +3,7 @@ import Service from "./Service";
 
 function ServicesSection() {
   return (
-    <div className="flex flex-col gap-16 mb-28">
+    <div id="services-section" className="flex flex-col gap-16 mb-28">
       <div className="flex flex-col items-center">
         <Label text="Servicios" />
         <h3 className="text-[60px] text-var-dark-blue font-w-bold">

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 function MiniCard({ data }) {
@@ -22,6 +23,7 @@ function MiniCard({ data }) {
 function IntroSection() {
   return (
     <section
+      id="intro-section"
       className="relative flex flex-col justify-between w-full h-[calc(100vh-64px)] bg-cover bg-[60%_100%] bg-gradient-blue-from-left tablet:h-[calc(100vh-80px)] tablet:bg-[0%_100%] tablet:rounded-ss-[300px] tablet:rounded-ee-[300px]"
       style={{
         backgroundImage: "url('/assets/backgrounds/intro-banner.webp')",
@@ -48,15 +50,22 @@ function IntroSection() {
           </h1>
         </div>
         <div className="hidden tablet:flex tablet:flex-row tablet:gap-4">
-          <Button
-            type="white"
-            styles="w-[243px] h-[51px] font-w-regular"
-            content="Explorá nuestros proyectos"
-          />
+          <Link to="/projects">
+            <Button
+              type="white"
+              styles="w-[243px] h-[51px] font-w-regular"
+              content="Explorá nuestros proyectos"
+            />
+          </Link>
           <Button
             type="transparent"
             styles="w-[205px] h-[51px] font-w-regular"
             content="Resolvemos tus dudas"
+            onClick={() => {
+              document.querySelector("#faq-section").scrollIntoView({
+                behavior: "smooth",
+              });
+            }}
           />
         </div>
       </div>
