@@ -57,7 +57,7 @@ function Service({
             <img
               src="/assets/services/ifb2-image.png"
               alt="cp-image"
-              className="bg-red-500 ml-1"
+              className="ml-1"
             />
           </div>
         ) : (
