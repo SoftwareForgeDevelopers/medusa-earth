@@ -69,7 +69,7 @@ const Navbar = ({ isHomepage }) => {
   }, []);
 
   return (
-    <header className="h-16 px-6 py-4 w-full flex items-center justify-between fixed top-0 bg-white z-50 tablet:px-10 tablet:h-20 laptop:px-16 laptop:text-lg">
+    <header className="h-16 px-6 py-4 w-full flex items-center justify-between fixed top-0 bg-white z-50 select-none tablet:px-10 tablet:h-20 laptop:px-16 laptop:text-lg">
       <figure className="h-11 hover:cursor-pointer tablet:hidden">
         <img
           src="/assets/icons/hamburguer.webp"

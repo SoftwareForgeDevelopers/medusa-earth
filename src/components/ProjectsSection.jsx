@@ -3,10 +3,20 @@ import Label from "./Label";
 import Button from "./Button";
 import { useGetProjects } from "../services/Sanity.service";
 
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
+
 function ProjectsSection() {
   const projects = useGetProjects();
   return (
-    <section id="projects-section" className="flex flex-col my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity">
+    <section
+      id="projects-section"
+      className="flex flex-col justify-center my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity">
       <div>
         <Label text="Proyectos" white={true} />
 
@@ -33,6 +43,78 @@ function ProjectsSection() {
           </Button>
         </div>
       </div>
+
+      {/* <div className="h-full w-full">
+        <div className="lg:mx-auto max-w-[1500px] mx-[1.5rem]">
+          <Swiper
+            modules={[EffectCoverflow, Pagination, Navigation]}
+            effect={"coverflow"}
+            loop={false}
+            spaceBetween={200}
+            slidesPerView={3}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            centeredSlides={true}
+            grabCursor={true}
+            coverflowEffect={{
+              rotate: 0,
+              slideShadows: false,
+            }}
+            onInit={(swiper) => {
+              swiper.slideTo(1);
+            }}
+            className="coverflow"
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              // 640: {
+              //   slidesPerView: 1,
+              //   spaceBetween: 20,
+              // },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 50,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 300,
+              },
+            }}>
+            {projects.map((project, index) => (
+              <SwiperSlide key={index}>
+                <ProjectCard key={project.id} project={project} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </div> */}
+
+      {/* <div className="flex justify-center h-full w-full">
+        <Swiper
+          modules={[Pagination, Navigation]}
+          loop={false}
+          slidesPerView={3}
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          centeredSlides={true}
+          grabCursor={true}
+          onInit={(swiper) => {
+            swiper.slideTo(1);
+          }}>
+          {projects.slice(0, 3).map((project, index) => (
+            <SwiperSlide key={index}>
+              <ProjectCard key={project.id} project={project} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div> */}
 
       <div className="flex justify-center h-full w-full gap-6 relative">
         {projects.slice(0, 3).map((project) => (
