@@ -48,16 +48,16 @@ function Service({
             <img
               src="/assets/services/cp-image.png"
               alt="cp2-image"
-              className="absolute top-1/2 left-12"
+              className="absolute top-2/4 left-12"
             />
           </>
         ) : imageLayout === 2 ? (
           <div className="flex flex-col items-end">
-            <img src="/assets/services/ifb-image.png" alt="background" />
+            <img src="/assets/services/ifb-image.png" alt="background"/>
             <img
               src="/assets/services/ifb2-image.png"
               alt="cp-image"
-              className=""
+              className="bg-red-500 ml-1"
             />
           </div>
         ) : (
