@@ -25,7 +25,7 @@ const MenuItems = ({ items, isHomepage }) => {
     <ul className="flex flex-col justify-between gap-y-6 tablet:flex-row tablet:gap-x-2 desktop:gap-x-8">
       {items.map((item) =>
         item.name === "Proyectos" ? (
-          <Link to={item.link}>
+          <Link key={item.name} to={item.link}>
             <li
               key={item.name}
               className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
