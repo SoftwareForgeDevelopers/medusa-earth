@@ -13,7 +13,7 @@ function InfoBanner({
 }) {
   return (
     <div
-      className={`flex flex-col w-full items-center ${intro ? "tablet:py-[90px]" : "px-[18px] py-[90px]"} tablet:px-[65px]`}>
+      className={`flex flex-col w-full items-center ${intro ? "tablet:py-[90px]" : "px-[18px] pt-[90px] pb-[66px]"} tablet:px-[65px]`}>
       <div
         className={`relative flex flex-col ${intro ? "h-[calc(100vh-64px)] tablet:rounded-[38px]" : "h-[537px rounded-[38px]"} w-full pt-[75px] pb-[45px] px-16 bg-cover bg-[0%_75%] tablet:h-[537px]`}
         style={{ backgroundImage: `url('${image}')` }}>

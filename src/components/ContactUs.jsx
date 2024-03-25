@@ -1,12 +1,18 @@
+import Label from "./Label";
+
 function ContactUs() {
   return (
-    <div id="contact-us-section" className="mx-[64px] my-[112px] flex flex-row justify-between  ">
-      <div className="flex flex-col justify-around">
-        <button className="rounded-[25px] border border-solid border-var-dark-blue text-var-dark-blue w-[114px] px-[20px] py-[4px]">
-          Contacto
-        </button>
-        <h2 className="text-[48px] w-bold text-var-dark-blue">¡Contáctanos!</h2>
-        <p>¡Estamos aquí para ayudarte!</p>
+    <div
+      id="contact-us-section"
+      className="flex flex-col justify-between mx-[64px] my-[112px] gap-20 tablet:flex-row">
+      <div className="flex flex-col gap-10 tablet:gap-20">
+        <div className="flex flex-col gap-4">
+          <Label text="Contacto" white={false} blueBorder={true} />
+          <h2 className="text-[48px] font-w-bold text-var-dark-blue">
+            ¡Contáctanos!
+          </h2>
+          <p>¡Estamos aquí para ayudarte!</p>
+        </div>
         <ul className="flex flex-col gap-4 text-var-dark-blue">
           <li className="flex flex-row gap-1">
             <img src="/assets/icons/envelope.png" alt="" />
