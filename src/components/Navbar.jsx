@@ -37,7 +37,7 @@ const MenuItems = ({ items, isHomepage }) => {
 
 const MobileMenu = ({ isHomepage }) => (
   <nav className="flex flex-col items-center fixed top-0 left-0 w-screen mt-16 py-4 px-5 gap-6 text-2xl bg-white text-var-dark-blue group">
-    <div className="w-fu</div>ll group-open:animate-fadeIn">
+    <div className="w-full group-open:animate-fadeIn">
       <MenuItems items={items} isHomepage={isHomepage} />
     </div>
     <div className="flex flex-col gap-3 w-full group-open:animate-fadeIn">

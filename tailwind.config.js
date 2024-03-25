@@ -47,7 +47,7 @@ export default {
         "var-dark-green": "rgb(4, 46, 86)",
         "var-dark-blue": "rgb(4, 20, 86)",
         "var-green": "rgb(4, 166, 162)",
-        "var-grey-blue": "rgba(211, 216, 221, 1)",
+        "var-grey-blue": "rgba(211, 216, 221, 0.5)",
         "var-grey-blue-transparent": "rgba(211, 216, 221, 0.25)",
       },
       backgroundImage: {
