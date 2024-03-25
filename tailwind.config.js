@@ -38,6 +38,7 @@ export default {
       },
       colors: {
         "var-black": "rgba(0, 7, 30, 1)",
+        "var-white": "rgba(255, 255, 255, 1)",
         "var-sky-blue": "rgb(187, 255, 255)",
         "var-very-light-grey": "rgba(217, 217, 217, 0.28)",
         "var-light-grey": "rgba(102, 102, 102, 0.5)",
@@ -46,7 +47,8 @@ export default {
         "var-dark-green": "rgb(4, 46, 86)",
         "var-dark-blue": "rgb(4, 20, 86)",
         "var-green": "rgb(4, 166, 162)",
-        "var-grey-blue": "rgba(211, 216, 221, 0.5)",
+        "var-grey-blue": "rgba(211, 216, 221, 1)",
+        "var-grey-blue-transparent": "rgba(211, 216, 221, 0.25)",
       },
       backgroundImage: {
         "gradient-border-blue": `linear-gradient(138.35deg, #041456 2.75%, rgba(172,235,239,0.937255) 97.73%)`,
