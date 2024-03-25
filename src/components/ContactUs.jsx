@@ -9,7 +9,7 @@ function ContactUs() {
     const messageRef = useRef();
     
     return (
-    <div id="contact-us-section" className="mx-[64px] my-[112px] flex flex-row justify-between  ">
+    <div id="contact-us-section" className="mx-[64px] my-[112px] flex flex-col justify-between  desktop:flex-row">
       <div className="flex flex-col justify-around">
         <button className="rounded-[25px] border border-solid border-var-dark-blue text-var-dark-blue w-[114px] px-[20px] py-[4px]">
           Contacto
@@ -31,14 +31,14 @@ function ContactUs() {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col gap-[64px]">
+      <div className="flex flex-col gap-[64px] w-[100%] desktop:w-1/2">
         <div className="flex flex-col gap-[8px]">
           <label htmlFor="name">Nombre</label>
           <input
             name="name"
             ref={nameRef}
             type="text"
-            className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
+            className="w-[100%] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px] desktop:w-[100%] tablet:w-[100%]"
           />
         </div>
         <div className="flex flex-col gap-[8px]">
@@ -48,7 +48,7 @@ function ContactUs() {
             ref={emailRef}
             type="text"
             autoComplete="name"
-            className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
+            className="w-[100%] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px] desktop:w-[100%] tablet:w-[100%]"
           />
         </div>
         <div className="flex flex-col gap-[8px]">
@@ -57,7 +57,7 @@ function ContactUs() {
             name="message"
             ref={messageRef}
             type="text"
-            className="w-[595px] h-[180px] py-14 px-6 border border-var-dark-blue rounded-[8px]"
+            className="w-[100%] h-[180px] py-14 px-6 border border-var-dark-blue rounded-[8px] desktop:w-[100%] tablet:w-[100%] "
           />
         </div>
         <Button type="dark-blue" onClick={() => SendEmail({email: emailRef.current.value, subject: 'Test from medusa', body: messageRef.current.value})}>Enviar</Button>
