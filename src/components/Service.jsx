@@ -11,7 +11,7 @@ function Service({
   buttonText,
 }) {
   let className =
-    "mx-[64px] px-[42px] py-[41px] flex flex-row items-center justify-around gap-[80px] rounded-[34px]";
+    "mx-[64px] px-[42px] py-[41px] flex flex-col items-center justify-around gap-[80px] rounded-[34px] desktop:flex-row";
   let titleClassName = "text-[45px] font-w-bold";
   let buttonClassName = "font-w-regular h-[51px] mt-10 text-[18px]";
   let linkClassName = "text-[18px] underline font-w-bold";

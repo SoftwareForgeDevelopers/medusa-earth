@@ -6,13 +6,13 @@ function ServicesSection() {
     <div id="services-section" className="flex flex-col gap-16 mb-28">
       <div className="flex flex-col items-center">
         <Label text="Servicios" />
-        <h3 className="text-[60px] text-var-dark-blue font-w-bold">
+        <h3 className= "text-[40px] text-var-dark-blue font-w-bold desktop:text-[60px]">
           Servicios Energéticos:
         </h3>
-        <p className="text-[60px] text-var-dark-blue">
+        <p className="text-[40px] text-var-dark-blue desktop:text-[60px]">
           Potenciando Tu Impacto Ambiental
         </p>
-        <div className="w-[617px] text-center">
+        <div className="w-[325px] text-center desktop:w-[617px]">
           <p className="text-[22px]">
             Descubre cómo nuestros servicios te acercan a una energía más limpia
             y sostenible, transformando el futuro de la energía renovable.

@@ -1,7 +1,16 @@
+import { useRef } from "react";
+import Button from "./Button";
 import Label from "./Label";
+import { SendEmail } from "../services/Email.service";
+
 
 function ContactUs() {
-  return (
+
+    const nameRef = useRef();
+    const emailRef = useRef();
+    const messageRef = useRef();
+    
+    return (
     <div
       id="contact-us-section"
       className="flex flex-col justify-between mx-[64px] my-[112px] gap-20 tablet:flex-row">
@@ -33,6 +42,7 @@ function ContactUs() {
           <label htmlFor="name">Nombre</label>
           <input
             name="name"
+            ref={nameRef}
             type="text"
             className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
           />
@@ -41,6 +51,7 @@ function ContactUs() {
           <label htmlFor="email">Email</label>
           <input
             id="email"
+            ref={emailRef}
             type="text"
             autoComplete="name"
             className="w-[596px] h-[50px] py-[14px] px-6 border border-var-dark-blue rounded-[28px]"
@@ -50,10 +61,12 @@ function ContactUs() {
           <label htmlFor="message">Mensaje</label>
           <textarea
             name="message"
+            ref={messageRef}
             type="text"
             className="w-[595px] h-[180px] py-14 px-6 border border-var-dark-blue rounded-[8px]"
           />
         </div>
+        <Button type="dark-blue" onClick={() => SendEmail({email: emailRef.current.value, subject: 'Test from medusa', body: messageRef.current.value})}>Enviar</Button>
       </div>
     </div>
   );
