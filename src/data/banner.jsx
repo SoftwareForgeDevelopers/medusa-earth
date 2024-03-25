@@ -25,13 +25,14 @@ const banner = [
     label: { text: "Proyectos", white: true },
     title: "Explora Nuestro Futuro Energético",
     description:
-      "Transformamos vidas, conectamos comunidades e iluminamos el camino hacia un futuro mejor.",
+    "Transformamos vidas, conectamos comunidades e iluminamos el camino hacia un futuro mejor.",
     image: "/assets/backgrounds/seated-man.webp",
     button: {
       content: "Invierte ahora",
       styles: "w-[150px] h-[51px] font-w-regular",
     },
     bgGradientClass: "bg-gradient-seated-man",
+    intro: true,
   },
 ];
 

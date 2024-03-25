@@ -5,20 +5,22 @@ import Button from "./Button";
 
 function BlogSection() {
   return (
-    <section className="flex flex-col w-100vw gap-20 py-28 px-16">
-      <div className="flex flex-col gap-[19px] h-[247px]">
-        <Label text="Blog" />
-        <h3 className="h-36 flex-row items-center text-[60px] text-var-dark-blue leading-snug">
+    <section className="flex flex-col w-100vw px-6 py-28 tablet:gap-20 tablet:px-16">
+      <div className="flex flex-col text-center gap-[19px] mb-[39px] tablet:h-[247px] tablet:text-left">
+        <div className="flex justify-center tablet:justify-normal">
+          <Label text="Blog" />
+        </div>
+        <h3 className="flex-row items-center text-[40px] text-var-dark-blue phone:text-[50px] tablet:text-[55px] laptop:text-[60px] tablet:leading-snug">
           <span className="font-w-bold">Proyectos con impacto: </span>
           <span className="block">Ayudá a quienes más lo necesitan</span>
         </h3>
-        <p className="h-[33px] text-[22px]">
+        <p className="text-[18px] tablet:text-[22px]">
           Descubre cómo podés ayudar a través de la energía renovable con Medusa
           Energy.
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-x-10 gap-y-16">
+      <div className="flex flex-wrap justify-center mb-[39px] gap-x-10 gap-y-[39px] tablet:gap-y-16 tablet:mb-0">
         <BlogCard
           name="Project name here"
           date="14/03/24"

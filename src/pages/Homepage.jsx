@@ -25,9 +25,9 @@ function Homepage() {
       <ServicesSection />
       <BlogSection />
       <Newsletter />
-      <ContactUs />
       <FaqSection />
       <InfoBanner {...banner[0]} />
+      <ContactUs />
     </Layout>
   );
 }

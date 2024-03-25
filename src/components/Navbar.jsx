@@ -8,7 +8,7 @@ const items = [
   { name: "Proyectos", link: "#projects-section" },
   { name: "Servicios", link: "#services-section" },
   { name: "FAQ", link: "#faq-section" },
-  { name: "Contacto", link: "#" },
+  { name: "Contacto", link: "#contact-us-section" },
 ];
 
 const MenuItems = ({ items, isHomepage }) => {
@@ -37,7 +37,7 @@ const MenuItems = ({ items, isHomepage }) => {
 
 const MobileMenu = ({ isHomepage }) => (
   <nav className="flex flex-col items-center fixed top-0 left-0 w-screen mt-16 py-4 px-5 gap-6 text-2xl bg-white text-var-dark-blue group">
-    <div className="w-fu</div>ll group-open:animate-fadeIn">
+    <div className="w-full group-open:animate-fadeIn">
       <MenuItems items={items} isHomepage={isHomepage} />
     </div>
     <div className="flex flex-col gap-3 w-full group-open:animate-fadeIn">
@@ -63,13 +63,13 @@ const Navbar = ({ isHomepage }) => {
             .querySelector(sectionId)
             .scrollIntoView({ behavior: "smooth" });
           localStorage.removeItem("sectionId");
-        }, 100);
+        }, 500);
       }
     };
   }, []);
 
   return (
-    <header className="h-16 px-6 py-4 w-full flex items-center justify-between fixed top-0 bg-white z-50 tablet:px-10 tablet:h-20 laptop:px-16 laptop:text-lg">
+    <header className="h-16 px-6 py-4 w-full flex items-center justify-between fixed top-0 bg-white z-50 select-none tablet:px-10 tablet:h-20 laptop:px-16 laptop:text-lg">
       <figure className="h-11 hover:cursor-pointer tablet:hidden">
         <img
           src="/assets/icons/hamburguer.webp"
