@@ -5,7 +5,7 @@ import Button from "./Button";
 const items = [
   { name: "Inicio", link: "#intro-section" },
   { name: "Sobre Nosotros", link: "#about-medusa-section" },
-  { name: "Proyectos", link: "#projects-section" },
+  { name: "Proyectos", link: "/projects" },
   { name: "Servicios", link: "#services-section" },
   { name: "FAQ", link: "#faq-section" },
   { name: "Contacto", link: "#contact-us-section" },
@@ -23,14 +23,24 @@ const MenuItems = ({ items, isHomepage }) => {
 
   return (
     <ul className="flex flex-col justify-between gap-y-6 tablet:flex-row tablet:gap-x-2 desktop:gap-x-8">
-      {items.map((item) => (
-        <li
-          key={item.name}
-          onClick={() => handleClick(item.link)}
-          className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
-          {item.name}
-        </li>
-      ))}
+      {items.map((item) =>
+        item.name === "Proyectos" ? (
+          <Link to={item.link}>
+            <li
+              key={item.name}
+              className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
+              {item.name}
+            </li>
+          </Link>
+        ) : (
+          <li
+            key={item.name}
+            onClick={() => handleClick(item.link)}
+            className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
+            {item.name}
+          </li>
+        ),
+      )}
     </ul>
   );
 };
