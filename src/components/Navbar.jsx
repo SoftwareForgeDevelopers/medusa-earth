@@ -94,7 +94,7 @@ const Navbar = ({ isHomepage }) => {
           <img
             src="/assets/logo/medusa-azul-sin-fondo.webp"
             alt="logo"
-            className="h-full w-full"
+            className="h-full w-full mt-1 tablet:mt-0"
           />
         </Link>
       </figure>
