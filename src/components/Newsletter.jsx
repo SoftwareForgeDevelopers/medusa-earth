@@ -11,7 +11,7 @@ function Newsletter() {
           className="w-[325px] phone:w-[250px] max-w-[338px] laptop:w-[325px] desktop:min-w-[338px]"
         />
       </div>
-      <div className="flex flex-col w-full tablet:px-7 desktop:px-10 gap-6">
+      <div className="flex flex-col tablet:px-7 desktop:px-10 gap-6">
         <div className="flex flex-col w-full gap-3 text-center tablet:text-left">
           <h2 className="text-[30px] font-w-bold text-var-dark-blue tablet:text-[45px]">
             Una dosis semanal de buenas noticias
