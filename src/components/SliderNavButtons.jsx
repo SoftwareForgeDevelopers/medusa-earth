@@ -1,19 +1,8 @@
 import React from "react";
 
-export const SliderNavButtons = ({ config, navButtonsRef }) => {
+export const SliderNavButtons = ({ styles, navButtonsRef }) => {
 	//Es el nombre del color en las variables de tailwind.config.js
-	const {
-		borderColor,
-		arrowColor,
-		backgroundColor,
-		borderColorHover,
-		arrowColorHover,
-		backgroundColorHover,
-		borderColorPressed,
-		arrowColorPressed,
-		backgroundColorPressed
-	} = config;
-	const buttonClassName = `h-[44px] w-[44px] rounded-full border flex justify-center items-center bg-${backgroundColor} fill-${arrowColor} border-${borderColor} hover:bg-${backgroundColorHover} hover:border-${borderColorHover} hover:fill-${arrowColorHover} active:bg-${backgroundColorPressed} active:border-${borderColorPressed} active:fill-${arrowColorPressed}`
+	const buttonClassName = `h-[44px] w-[44px] rounded-full border flex justify-center items-center ${styles}`
 	
 
 	return (

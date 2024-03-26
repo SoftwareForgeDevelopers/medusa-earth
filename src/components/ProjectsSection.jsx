@@ -68,49 +68,10 @@ function ProjectsSection() {
 						))}
 					</Slider>
 					<SliderNavButtons
-						config={{
-							borderColor: "var-grey-blue",
-							arrowColor: "var-grey-blue",
-							backgroundColor: "var-grey-blue-transparent",
-							borderColorHover: "var-white",
-							arrowColorHover: "var-dark-blue",
-							backgroundColorHover: "var-white",
-							borderColorPressed: "var-white",
-							arrowColorPressed: "var-dark-blue",
-							backgroundColorPressed: "var-white",
-						}}
+						styles={"bg-var-grey-blue-transparent fill-var-grey-blue border-var-grey-blue hover:bg-var-white hover:border-var-white hover:fill-var-dark-blue active:bg-var-white active:border-var-white active:fill-var-dark-blue"}
 						navButtonsRef={navButtonsRef}
 					/>
 			</div>
-
-      {/* <div className="flex justify-center h-full w-full">
-        <Swiper
-          modules={[Pagination, Navigation]}
-          loop={false}
-          slidesPerView={3}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          navigation={true}
-          centeredSlides={true}
-          grabCursor={true}
-          onInit={(swiper) => {
-            swiper.slideTo(1);
-          }}>
-          {projects.map((project, index) => (
-            <SwiperSlide key={index}>
-              <ProjectCard key={project.id} project={project} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div> */}
-
-      {/* <div className="flex justify-center h-full w-full gap-6 relative">
-        {projects.slice(0, 3).map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div> */}
     </section>
   );
 }

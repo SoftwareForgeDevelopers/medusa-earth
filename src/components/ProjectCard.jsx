@@ -15,7 +15,7 @@ function activeCard(project) {
 					/>
 					<Button
 						type="white-without-border"
-						styles="absolute w-[105px] h-[42px] font-w-bold text-sm top-2 right-3 px-0"
+						styles="absolute w-[105px] h-[42px] font-w-bold text-sm top-2 right-3 !px-0"
 						content={project.status}
 					/>
 				</figure>
@@ -63,7 +63,7 @@ function activeCard(project) {
 					<p className="text-[15px] text-var-dark-blue">
 						{project.description}
 					</p>
-					<Button type="dark-blue" styles="w-32 font-w-regular text-sm px-0">
+					<Button type="dark-blue" styles="w-32 font-w-regular text-sm !px-0">
 						Ver Proyecto
 						<span>
 							<img
@@ -93,7 +93,7 @@ function inactiveCard(project) {
 					/>
 					<Button
 						type="white-without-border"
-						styles="absolute w-[70px] h-[28px] font-w-bold text-[10px] top-2 right-3 px-0"
+						styles="absolute w-[70px] h-[28px] font-w-bold text-[10px] top-2 right-3 !px-0"
 						content={project.status}
 					/>
 				</figure>
@@ -141,7 +141,7 @@ function inactiveCard(project) {
 					<p className="text-[10px] text-var-dark-blue">
 						{project.description}
 					</p>
-					<Button type="dark-blue" styles="w-[86px] font-w-regular text-[10px] px-0">
+					<Button type="dark-blue" styles="w-[86px] font-w-regular text-[10px] !px-0">
 						Ver Proyecto
 						<span>
 							<img
