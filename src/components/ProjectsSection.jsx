@@ -1,25 +1,26 @@
+import React, { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import Label from "./Label";
 import Button from "./Button";
 import { useGetProjects } from "../services/Sanity.service";
 
-import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/effect-coverflow";
-import { SwiperNavButtons } from "./SwiperNavButtons";
+import "slick-carousel/slick/slick-theme.css";
+import { SliderNavButtons } from "./SliderNavButtons";
 
 function ProjectsSection() {
 	const projects = useGetProjects();
+	const navButtonsRef = React.useRef(null);
+	const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+
 	return (
 		<section
 			id="projects-section"
-			className="flex flex-col justify-center my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 px-16 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity"
+			className="flex flex-col justify-center my-28 rounded-ss-[70px] rounded-ee-[70px] py-28 gap-3 bg-center bg-cover bg-[url('/assets/backgrounds/blue-for-projects.webp')] bg-blend-luminosity"
 		>
-			<div>
+			<div className="px-16">
 				<Label text="Proyectos" white={true} />
 
 				<div className="flex h-36  items-center justify-between gap-4 text-white">
@@ -48,66 +49,39 @@ function ProjectsSection() {
 			</div>
 
 			<div className="h-full w-full">
-				<div className="lg:mx-auto max-w-[1500px] mx-[1.5rem]">
-					<Swiper
-						modules={[EffectCoverflow, Navigation]}
-						effect={"coverflow"}
-						loop={false}
-						spaceBetween={0}
-						slidesPerView={6}
-						centeredSlides={true}
-						grabCursor={true}
-						coverflowEffect={{
-							scale: 0.95,
-							depth:-5,
-							rotate: 0,
-							stretch: 5,
-							slideShadows: false,
-						}}
-						onInit={(swiper) => {
-							swiper.slideTo(1);
-						}}
-						className="coverflow"
-						breakpoints={{
-							320: {
-								slidesPerView: 1,
-								spaceBetween: 10,
-							},
-							640: {
-								slidesPerView: 1,
-								spaceBetween: 20,
-							},
-							768: {
-								slidesPerView: 2,
-								spaceBetween: 50,
-							},
-							1024: {
-								slidesPerView: 4,
-								spaceBetween: 300,
-							},
-						}}
+					<Slider
+						className={"center mb-[14px]"}
+						centerMode={true}
+						centerPadding="0px"
+						dots={false}
+						infinite={true}
+						speed={500}
+						slidesToShow={4}
+						slidesToScroll={1}
+						arrows={false}
+						ref={navButtonsRef}
+						beforeChange= {(current, next) => setCurrentSlideIndex(next)}	
+						variableWidth={true}
+						adaptiveHeight={true}
 					>
 						{projects.map((project, index) => (
-							<SwiperSlide key={index}  className="mb-[14px]">
-								<ProjectCard key={project.id} project={project} />
-							</SwiperSlide>
+							<ProjectCard key={project.id} id={index} project={project} currentSlideIndex={currentSlideIndex} />
 						))}
-						<SwiperNavButtons config={
-							{
-								borderColor: "var-grey-blue",
-								arrowColor: "var-grey-blue",
-								backgroundColor: "var-grey-blue-transparent",
-								borderColorHover: "var-white",
-								arrowColorHover: "var-dark-blue",
-								backgroundColorHover: "var-white",
-								borderColorPressed: "var-white",
-								arrowColorPressed: "var-dark-blue",
-								backgroundColorPressed: "var-white"
-							}
-						
-						} />
-					</Swiper>
-				</div>
+					</Slider>
+					<SliderNavButtons
+						config={{
+							borderColor: "var-grey-blue",
+							arrowColor: "var-grey-blue",
+							backgroundColor: "var-grey-blue-transparent",
+							borderColorHover: "var-white",
+							arrowColorHover: "var-dark-blue",
+							backgroundColorHover: "var-white",
+							borderColorPressed: "var-white",
+							arrowColorPressed: "var-dark-blue",
+							backgroundColorPressed: "var-white",
+						}}
+						navButtonsRef={navButtonsRef}
+					/>
 			</div>
 
 			{/* <div className="flex justify-center h-full w-full">

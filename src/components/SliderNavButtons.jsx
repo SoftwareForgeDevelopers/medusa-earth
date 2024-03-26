@@ -1,7 +1,6 @@
 import React from "react";
-import { useSwiper } from "swiper/react";
 
-export const SwiperNavButtons = ({ config }) => {
+export const SliderNavButtons = ({ config, navButtonsRef }) => {
 	//Es el nombre del color en las variables de tailwind.config.js
 	const {
 		borderColor,
@@ -15,13 +14,13 @@ export const SwiperNavButtons = ({ config }) => {
 		backgroundColorPressed
 	} = config;
 	const buttonClassName = `h-[44px] w-[44px] rounded-full border flex justify-center items-center bg-${backgroundColor} fill-${arrowColor} border-${borderColor} hover:bg-${backgroundColorHover} hover:border-${borderColorHover} hover:fill-${arrowColorHover} active:bg-${backgroundColorPressed} active:border-${borderColorPressed} active:fill-${arrowColorPressed}`
-	const swiper = useSwiper();
+	
 
 	return (
 		<div className="flex gap-[8px] justify-center">
 			<button
 				className={buttonClassName}
-				onClick={() => swiper.slidePrev()}
+				onClick={() => navButtonsRef?.current?.slickPrev()}
 			>
 				<svg
 					width="23"
@@ -39,7 +38,7 @@ export const SwiperNavButtons = ({ config }) => {
 			</button>
 			<button
 				className={buttonClassName}
-				onClick={() => swiper.slideNext()}
+				onClick={() => navButtonsRef?.current?.slickNext()}
 			>
 				<svg
 					width="23"
