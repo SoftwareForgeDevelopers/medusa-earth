@@ -5,7 +5,7 @@ import Button from "./Button";
 const items = [
   { name: "Inicio", link: "#intro-section" },
   { name: "Sobre Nosotros", link: "#about-medusa-section" },
-  { name: "Proyectos", link: "#projects-section" },
+  { name: "Proyectos", link: "/projects" },
   { name: "Servicios", link: "#services-section" },
   { name: "FAQ", link: "#faq-section" },
   { name: "Contacto", link: "#contact-us-section" },
@@ -23,21 +23,31 @@ const MenuItems = ({ items, isHomepage }) => {
 
   return (
     <ul className="flex flex-col justify-between gap-y-6 tablet:flex-row tablet:gap-x-2 desktop:gap-x-8">
-      {items.map((item) => (
-        <li
-          key={item.name}
-          onClick={() => handleClick(item.link)}
-          className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
-          {item.name}
-        </li>
-      ))}
+      {items.map((item) =>
+        item.name === "Proyectos" ? (
+          <Link key={item.name} to={item.link}>
+            <li
+              key={item.name}
+              className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
+              {item.name}
+            </li>
+          </Link>
+        ) : (
+          <li
+            key={item.name}
+            onClick={() => handleClick(item.link)}
+            className="hover:font-w-bold hover:cursor-pointer hover:text-var-dark-blue">
+            {item.name}
+          </li>
+        ),
+      )}
     </ul>
   );
 };
 
 const MobileMenu = ({ isHomepage }) => (
   <nav className="flex flex-col items-center fixed top-0 left-0 w-screen mt-16 py-4 px-5 gap-6 text-2xl bg-white text-var-dark-blue group">
-    <div className="w-fu</div>ll group-open:animate-fadeIn">
+    <div className="w-full group-open:animate-fadeIn">
       <MenuItems items={items} isHomepage={isHomepage} />
     </div>
     <div className="flex flex-col gap-3 w-full group-open:animate-fadeIn">
@@ -84,7 +94,7 @@ const Navbar = ({ isHomepage }) => {
           <img
             src="/assets/logo/medusa-azul-sin-fondo.webp"
             alt="logo"
-            className="h-full w-full"
+            className="h-full w-full mt-1 tablet:mt-0"
           />
         </Link>
       </figure>

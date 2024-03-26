@@ -11,7 +11,7 @@ function Service({
   buttonText,
 }) {
   let className =
-    "mx-[64px] px-[42px] py-[41px] flex flex-row items-center justify-around gap-[80px] rounded-[34px]";
+    "px-[42px] py-[41px] flex flex-col items-center justify-around gap-[80px] rounded-[34px] desktop:flex-row desktop:mx-[64px]";
   let titleClassName = "text-[45px] font-w-bold";
   let buttonClassName = "font-w-regular h-[51px] mt-10 text-[18px]";
   let linkClassName = "text-[18px] underline font-w-bold";
@@ -43,17 +43,17 @@ function Service({
             <img
               src="/assets/services/cp-image.png"
               alt="cp-image"
-              className="absolute top-16 right-12"
+              className="absolute top-16 right-12 px-3"
             />
             <img
               src="/assets/services/cp-image.png"
               alt="cp2-image"
-              className="absolute top-2/4 left-12"
+              className="absolute top-2/4 left-12 px-3"
             />
           </>
         ) : imageLayout === 2 ? (
           <div className="flex flex-col items-end">
-            <img src="/assets/services/ifb-image.png" alt="background"/>
+            <img src="/assets/services/ifb-image.png" alt="background" />
             <img
               src="/assets/services/ifb2-image.png"
               alt="cp-image"

@@ -49,7 +49,7 @@ const QuestionCardCaller = () => {
         return (
           <div
             key={index}
-            className={`w-full tablet:w-1/3 ${orderClass} ${orderClassSm}`}>
+            className={`w-full tablet:w-1/3 ${orderClass} ${orderClassSm} select-none`}>
             <QuestionCard
               question={question.question}
               answer={question.answer}
@@ -64,17 +64,17 @@ const QuestionCardCaller = () => {
 
 function MoreInfoCard() {
   return (
-    <div className="flex justify-between items-center py-[34px] px-[37px] rounded-[28px] bg-white">
-      <div className="flex flex-col gap-4 w-2/3">
-        <h3 className="text-var-dark-blue text-[45px]">
+    <div className="flex flex-col justify-between items-center py-[34px] px-[25px] gap-6 rounded-[28px] bg-white phone:px-[37px] tablet:flex-row">
+      <div className="flex flex-col gap-4 text-center tablet:w-2/3 tablet:text-left">
+        <h3 className="text-var-dark-blue text-[30px] tablet:text-[45px]">
           <span className="font-w-bold">¿Seguís teniendo consultas?</span>
         </h3>
-        <p className="max-w-lg text-left text-[18px]">
+        <p className="max-w-lg text-[18px]">
           Si tenés más preguntas o necesitas clarificaciones adicionales,
           nuestro equipo está listo para ofrecerte la información que necesitas.
         </p>
       </div>
-      <Button type="dark-blue" styles="font-w-regular">
+      <Button type="dark-blue" styles="font-w-regular flex-shrink-0">
         Contactate con nuestro equipo
         <span>
           <img
@@ -90,11 +90,13 @@ function MoreInfoCard() {
 
 function FaqSection() {
   return (
-    <section id="faq-section" className="flex flex-col mt-28 mb-5 py-28 px-16 gap-12 rounded-ss-[70px] rounded-ee-[70px] bg-cover bg-center bg-var-dark-blue">
+    <section
+      id="faq-section"
+      className="flex flex-col mt-28 mb-5 py-28 px-[25px] gap-12 rounded-ss-[70px] rounded-ee-[70px] bg-cover bg-center bg-var-dark-blue tablet:px-16">
       <div className="flex flex-col gap-[45px]">
-        <div className="flex flex-col gap-[32px]">
+        <div className="flex flex-col gap-[32px] items-center text-center tablet:items-start tablet:text-left">
           <Label text="F.A.Q" white={true} />
-          <h3 className="text-white text-5xl">
+          <h3 className="text-white text-[40px] tablet:text-5xl">
             <span className="font-w-bold">Preguntas Frecuentes: </span>
             Respuestas Claras
           </h3>

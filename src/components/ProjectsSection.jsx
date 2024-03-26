@@ -23,30 +23,29 @@ function ProjectsSection() {
 			<div className="px-16">
 				<Label text="Proyectos" white={true} />
 
-				<div className="flex h-36  items-center justify-between gap-4 text-white">
-					<h3 className="flex flex-col text-5xl font-w-bold ">
-						<span className="block">Explorá Nuestro</span>
-						<span className="block">Futuro Energético</span>
-					</h3>
-					<p className="w-[412px] text-[18px]">
-						Explora proyectos innovadores que están impulsando el cambio hacia
-						un futuro más sostenible en energía renovable.
-					</p>
-					<Button
-						type="white-without-border"
-						styles="w-52 font-w-regular text-[18px]"
-					>
-						Explorar Proyectos
-						<span>
-							<img
-								src="/assets/icons/little-arrow-blue.webp"
-								alt="Arrow Right"
-								className="w-5"
-							/>
-						</span>
-					</Button>
-				</div>
-			</div>
+        <div className="flex flex-col items-center justify-between mt-3 text-white desktop:flex-row desktop:h-36 desktop:mt-0">
+          <h3 className="flex flex-col font-w-bold mb-4 text-[40px] text-center laptop:text-5xl desktop:mb-0 desktop:text-left">
+            <span className="block">Explorá Nuestro</span>
+            <span className="block">Futuro Energético</span>
+          </h3>
+          <p className="max-w-[412px] mb-8 text-[18px] text-center desktop:mb-0 desktop:text-left">
+            Explora proyectos innovadores que están impulsando el cambio hacia
+            un futuro más sostenible en energía renovable.
+          </p>
+          <Button
+            type="white-without-border"
+            styles="h-12 w-52 flex-shrink-0 font-w-regular text-[18px]">
+            Explorar Proyectos
+            <span>
+              <img
+                src="/assets/icons/little-arrow-blue.webp"
+                alt="Arrow Right"
+                className="w-5"
+              />
+            </span>
+          </Button>
+        </div>
+      </div>
 
 			<div className="h-full w-full">
 					<Slider
@@ -84,7 +83,7 @@ function ProjectsSection() {
 					/>
 			</div>
 
-			{/* <div className="flex justify-center h-full w-full">
+      {/* <div className="flex justify-center h-full w-full">
         <Swiper
           modules={[Pagination, Navigation]}
           loop={false}
@@ -107,13 +106,13 @@ function ProjectsSection() {
         </Swiper>
       </div> */}
 
-			{/* <div className="flex justify-center h-full w-full gap-6 relative">
+      {/* <div className="flex justify-center h-full w-full gap-6 relative">
         {projects.slice(0, 3).map((project) => (
           <ProjectCard key={project.id} project={project} />
         ))}
       </div> */}
-		</section>
-	);
+    </section>
+  );
 }
 
 export default ProjectsSection;

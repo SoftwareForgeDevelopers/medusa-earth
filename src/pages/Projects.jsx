@@ -4,6 +4,7 @@ import RegulationsSection from "../components/RegulationsSection";
 import InfoBanner from "../components/InfoBanner";
 import banner from "../data/banner";
 import AllProjectsSection from "../components/AllProjectsSection";
+import ContactUs from "../components/ContactUs";
 
 function Projects() {
   return (
@@ -12,6 +13,7 @@ function Projects() {
       <AllProjectsSection />
       <RegulationsSection />
       <InfoBanner {...banner[0]} />
+      <ContactUs />
     </Layout>
   );
 }

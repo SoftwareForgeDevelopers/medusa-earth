@@ -9,8 +9,8 @@ const QuestionDropDown = ({ question, answer, dark }) => {
     <div className={`py-5 px-6 mx-4 mb-8 rounded-[24px] border ${mode}`}>
       <div className="grid divide-y max-w-xl mx-auto">
         <details className="group">
-          <summary className="flex justify-between cursor-pointer list-none">
-            <h3 className="text-2xl font-w-bold">{question}</h3>
+          <summary className="flex justify-between cursor-pointer list-none gap-4">
+            <h3 className="text-xl font-w-bold tablet:text-2xl">{question}</h3>
             <figure className="w-[18px] h-[18px] flex-shrink-0">
               <img
                 src={`/assets/icons/${dark ? "cross-white" : "cross-blue"}.webp`}
@@ -19,7 +19,9 @@ const QuestionDropDown = ({ question, answer, dark }) => {
               />
             </figure>
           </summary>
-          <p className="mt-3 group-open:animate-fadeIn text-lg">{answer}</p>
+          <p className="mt-3 group-open:animate-fadeIn text-base tablet:text-lg">
+            {answer}
+          </p>
         </details>
       </div>
     </div>
