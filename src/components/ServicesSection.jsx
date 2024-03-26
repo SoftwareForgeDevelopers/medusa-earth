@@ -3,13 +3,13 @@ import Service from "./Service";
 
 function ServicesSection() {
   return (
-    <div id="services-section" className="flex flex-col gap-16 mb-28">
+    <div id="services-section" className="flex flex-col gap-16 mb-28 mx-[6px]">
       <div className="flex flex-col items-center">
         <Label text="Servicios" />
-        <h3 className= "text-[40px] text-var-dark-blue font-w-bold desktop:text-[60px]">
+        <h3 className="text-[40px] text-center text-var-dark-blue font-w-bold desktop:text-[60px]">
           Servicios Energéticos:
         </h3>
-        <p className="text-[40px] text-var-dark-blue desktop:text-[60px]">
+        <p className="text-[40px] text-center text-var-dark-blue desktop:text-[60px]">
           Potenciando Tu Impacto Ambiental
         </p>
         <div className="w-[325px] text-center desktop:w-[617px]">
