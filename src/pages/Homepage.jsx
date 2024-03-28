@@ -12,10 +12,15 @@ import ContactUs from "../components/ContactUs";
 import FaqSection from "../components/FaqSection";
 import InfoBanner from "../components/InfoBanner";
 import banner from "../data/banner";
+import SEO from "../components/SEO";
 
 function Homepage() {
   return (
     <Layout navbar={true} footer={true} isHomepage={true}>
+      <SEO
+        title="Medusa | Home"
+        description="Medusa Energy actúa como un puente entre inversores, constructores y consumidores, facilitando la colaboración y el desarrollo de proyectos de energía renovable de manera eficiente y efectiva."
+      />
       <IntroSection />
       <RegulationsSection />
       <ValuesSection />
