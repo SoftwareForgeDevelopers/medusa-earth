@@ -60,7 +60,25 @@ function ProjectsSection() {
           ref={navButtonsRef}
           beforeChange={(current, next) => setCurrentSlideIndex(next)}
           variableWidth={true}
-          adaptiveHeight={true}>
+          adaptiveHeight={true}
+          responsive= {[
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]}
+          >
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
